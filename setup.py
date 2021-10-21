@@ -14,7 +14,7 @@ def main():
               "Programming Language :: Python :: 3",
               "Programming Language :: Python :: 3.7",
           ],
-          ext_modules=[Extension("read_obj", ["read.c"]), Extension("write_obj", ["write.c"])])
+          ext_modules=[Extension("read_obj", ["read.c"]), Extension("write_obj", ["main.c"])])
 
 if __name__ == "__main__":
     main()

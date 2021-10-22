@@ -6,8 +6,8 @@ PyObject * sort_fputs(PyObject * self, PyObject *args) {
   if(!PyArg_ParseTuple(args, "Os", &to_write, &where)) {
     return NULL;
   }
-  FILE *f = fopen(to_read, "r");
-  PyMarshal_WriteObjectToFile(to_write, f);
+  FILE *f = fopen(to_read, "w");
+  PyMarshal_WriteObjectToFile(where, f);
   return NULL;
 }
 static PyMethodDef FputsMethods[] = {

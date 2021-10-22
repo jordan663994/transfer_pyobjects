@@ -1,5 +1,5 @@
 #include <Python.h>
-
+#include <marshal.h>
 PyObject * sort_fputs(PyObject * self, PyObject *args) {
   PyObject *to_write;
   char *where;

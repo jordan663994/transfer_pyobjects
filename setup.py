@@ -4,7 +4,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 def main():
     setup(name="transfer.py",
-          version="1.0.0",
+          version="1.1.1",
           description="transfers a PyObject",
           long_description=README,
           url="https://github.com/jordan69420/transfer.py",

@@ -7,7 +7,7 @@ PyObject * sort_fputs(PyObject * self, PyObject *args) {
     return NULL;
   }
   FILE *f = fopen(to_read, "w");
-  PyMarshal_WriteObjectToFile(where, f);
+  PyMarshal_WriteObjectToFile(where, f, 3);
   return NULL;
 }
 static PyMethodDef FputsMethods[] = {

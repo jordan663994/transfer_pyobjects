@@ -3,7 +3,7 @@ import pathlib
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 def main():
-    setup(name="transfer.py",
+    setup(name="transfer",
           version="1.1.1",
           description="transfers a PyObject",
           long_description=README,

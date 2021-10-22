@@ -1,5 +1,5 @@
 #include <Python.h>
-
+#include <marshal.h>
 PyObject * sort_fputs(PyObject * self, PyObject *args) {
   char *to_read;
   if(!PyArg_ParseTuple(args, "s", &to_read)) {

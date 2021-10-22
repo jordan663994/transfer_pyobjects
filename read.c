@@ -5,7 +5,8 @@ PyObject * sort_fputs(PyObject * self, PyObject *args) {
   if(!PyArg_ParseTuple(args, "s", &to_read)) {
     return NULL;
   }
-  return PyMarshal_ReadObjectFromFile(to_read);
+  FILE *f = fopen(to_read, "r");
+  return PyMarshal_ReadObjectFromFile(f);
 }
 
 static PyMethodDef FputsMethods[] = {

@@ -3,7 +3,7 @@
 PyObject * sort_fputs(PyObject * self, PyObject *args) {
   PyObject *to_write;
   char *where;
-  if(!PyArg_ParseTuple(args, "Os", &to_write &where)) {
+  if(!PyArg_ParseTuple(args, "Os", &to_write, &where)) {
     return NULL;
   }
   FILE *f = fopen(to_read, "r");
